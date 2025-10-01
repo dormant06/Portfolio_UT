@@ -171,9 +171,22 @@ body {
 }
 
 .profile-image {
-    font-size: 8rem;
-    color: #000;
-    flex-shrink: 0;
+    width: 120px;        /* adjust size as needed */
+    height: 120px;       
+    border-radius: 50%;
+    overflow: hidden;    /* ensures image stays within a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0; /* optional for a subtle bg */
+}
+
+.actual-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* makes the image fill the circle without stretching */
+    border-radius: 50%;     /* ensures the image itself is circular */
+    display: block;
 }
 
 .profile-info {
@@ -204,14 +217,15 @@ body {
 /* Background Section */
 .background-section {
     margin-bottom: 4rem;
+    margin-left: 8rem;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: #000;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .background-content {

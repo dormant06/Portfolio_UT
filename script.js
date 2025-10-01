@@ -216,41 +216,41 @@ document.querySelectorAll('.social-link, .social-card').forEach(link => {
 });
 
 // Print functionality for resume page
-if (window.location.pathname.includes('resume.html')) {
-    const printBtn = document.createElement('button');
-    printBtn.innerHTML = '<i class="fas fa-print"></i> Print Resume';
-    printBtn.className = 'print-btn';
-    printBtn.style.cssText = `
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        background: #000;
-        color: white;
-        border: none;
-        padding: 1rem 1.5rem;
-        border-radius: 6px;
-        cursor: pointer;
-        font-weight: 600;
-        z-index: 1000;
-        transition: all 0.3s ease;
-    `;
+// if (window.location.pathname.includes('resume.html')) {
+//     const printBtn = document.createElement('button');
+//     printBtn.innerHTML = '<i class="fas fa-print"></i> Print Resume';
+//     printBtn.className = 'print-btn';
+//     printBtn.style.cssText = `
+//         position: fixed;
+//         bottom: 2rem;
+//         right: 2rem;
+//         background: #000;
+//         color: white;
+//         border: none;
+//         padding: 1rem 1.5rem;
+//         border-radius: 6px;
+//         cursor: pointer;
+//         font-weight: 600;
+//         z-index: 1000;
+//         transition: all 0.3s ease;
+//     `;
     
-    printBtn.addEventListener('click', () => {
-        window.print();
-    });
+//     printBtn.addEventListener('click', () => {
+//         window.print();
+//     });
     
-    printBtn.addEventListener('mouseenter', () => {
-        printBtn.style.background = '#333';
-        printBtn.style.transform = 'translateY(-2px)';
-    });
+//     printBtn.addEventListener('mouseenter', () => {
+//         printBtn.style.background = '#333';
+//         printBtn.style.transform = 'translateY(-2px)';
+//     });
     
-    printBtn.addEventListener('mouseleave', () => {
-        printBtn.style.background = '#000';
-        printBtn.style.transform = 'translateY(0)';
-    });
+//     printBtn.addEventListener('mouseleave', () => {
+//         printBtn.style.background = '#000';
+//         printBtn.style.transform = 'translateY(0)';
+//     });
     
-    document.body.appendChild(printBtn);
-}
+//     document.body.appendChild(printBtn);
+// }
 
 // Add smooth transitions to all interactive elements
 const interactiveElements = document.querySelectorAll('a, button, .skill-card, .project-card, .contact-item');
