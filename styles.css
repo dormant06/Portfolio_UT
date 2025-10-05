@@ -171,8 +171,8 @@ body {
 }
 
 .profile-image {
-    width: 120px;        /* adjust size as needed */
-    height: 120px;       
+    width: 70px;        /* adjust size as needed */
+    height: 70px;       
     border-radius: 50%;
     overflow: hidden;    /* ensures image stays within a circle */
     display: flex;
